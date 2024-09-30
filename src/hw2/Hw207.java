@@ -18,10 +18,7 @@ public class Hw207 {
 				char i4 = (char)i3;
 				System.out.print(i4);
 			}
-				System.out.println();
-				
-			}
-			
+			System.out.println();		
+		}
 	}
-
 }
