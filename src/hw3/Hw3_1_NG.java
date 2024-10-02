@@ -3,8 +3,8 @@ package hw3;
 import java.util.Arrays;
 import java.util.Scanner ;
 
-public class Hw3_1_NG {
-	
+public class Hw3_1_NG { 				
+	//有點巢
 	public static void main(String[] args){
 		double [] x = new double[3];
 		Scanner sc = new Scanner(System.in);
