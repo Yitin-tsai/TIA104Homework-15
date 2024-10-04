@@ -11,7 +11,7 @@ public class Hw3_1_ {
 		for(int i = 0; i< x.length; i++) {
 //			if(sc.nextDouble()>0) {     
 ////			                            呼叫方法後須將scan輸入的數字以變數名稱暫存，才能進行比對，
-////										左邊的寫法會變成每次進到第一行變會重新呼叫一次方法再輸入一次數字。
+////										左邊的寫法會變成進到第一行若輸入的數字>0會再呼叫一次方法輸入數字。
 //				x[i]=sc.nextDouble();
 //			}
 			double var = sc.nextDouble();
