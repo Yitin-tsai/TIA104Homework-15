@@ -9,7 +9,8 @@ public class Hw3_1_ {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input numbers");
 		for(int i = 0; i< x.length; i++) {
-//			if(sc.nextDouble()>0) {     為什麼這樣寫不行?
+//			if(sc.nextDouble()>0) {     呼叫方法後須將scan輸入的數字以變數名稱暫存，才能進行比對，
+//										左邊的寫法會變成每次進到第一行變會重新呼叫一次方法再輸入一次數字。
 //				x[i]=sc.nextDouble();
 //			}
 			double var = sc.nextDouble();
