@@ -9,7 +9,9 @@ public class Hw3_1_ {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input numbers");
 		for(int i = 0; i< x.length; i++) {
-//			if(sc.nextDouble()>0) {     為什麼這樣寫不行?
+//			if(sc.nextDouble()>0) {     
+////			                            呼叫方法後須將scan輸入的數字以變數名稱暫存，才能進行比對，
+////										左邊的寫法會變成進到第一行若輸入的數字>0會再呼叫一次方法輸入數字。
 //				x[i]=sc.nextDouble();
 //			}
 			double var = sc.nextDouble();
@@ -23,12 +25,17 @@ public class Hw3_1_ {
 		}	
 		Arrays.sort(x) ;
 		for (int i = 0; i < x.length; i++) {
-			System.out.print(x[i]+" ");
+			if(x[i]>0) {
+				System.out.print(x[i]+" ");
+				}
+			else {
+				break;
+			}
 		}
 		if (x[0] == x[1] && x[1] == x[2] && x[1] !=0) {
 			System.out.println("這是一個正三角形");
 		}
-		else if (x[0] == x[1] || x[1] == x[2] && ((x[0] + x[1]) >x[2])) {
+		else if ((x[0] == x[1] || x[1] == x[2]) && ((x[0] + x[1]) >x[2])&& x[0] !=0) {
 			System.out.println("這是一個等腰三角形");
 		}
 		else if ((((x[0]*x[0] + x[1]*x[1]) == x[2]*x[2])) && x[0] !=0) {
@@ -36,9 +43,6 @@ public class Hw3_1_ {
 		}
 		else if ((x[0] + x[1])> x[2] && x[0] != 0) {
 			System.out.println("這是一個三角形");
-		}
-		else if (x[0] == 0 || x[1] == 0 || x[2] == 0) {
-			System.out.println("錯誤");
 		}
 		else {
 			System.out.println("這不是一個三角形");
