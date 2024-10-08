@@ -15,7 +15,7 @@ public class Hw4_5CountDays {
 			while(month == 0) {
 				System.out.println("請輸入月份");
 				month = sc.nextInt();
-				if(month>12) {
+				if(month>12||month<1) {
 					month=0;
 					System.out.println("請輸入正確的月份");
 				}
@@ -27,9 +27,9 @@ public class Hw4_5CountDays {
 				while(day==0) {
 					System.out.println("請輸入日期");
 					day = sc.nextInt();
-					if((c.m31Test(month)&&day>31)||(c.m30Test(month)&&day>30)) {
+					if((c.m31Test(month)&&day>31)||(c.m30Test(month)&&day>30)||day<=0) {
 						day=0;
-						System.out.println(month +"月日期應小於31或30天，請重新輸入");
+						System.out.println("輸入錯誤，請重新輸入");
 						}
 					else break;
 					}
@@ -38,7 +38,7 @@ public class Hw4_5CountDays {
 				while(day==0) {
 					System.out.println("請輸入日期");
 					day = sc.nextInt();
-					if((c.leapYearTest(year)&&day>29)||(c.notLeapYearTest(year)&&day>28)) {
+					if((c.leapYearTest(year)&&day>29)||(c.notLeapYearTest(year)&&day>28)||day<=0) {
 						day=0;
 						System.out.println(month +"月日期應小於29或28天，請重新輸入");
 					}
@@ -62,19 +62,11 @@ public class Hw4_5CountDays {
 class count{
 	int[] m31 = {1,3,5,7,8,10,12};
 	int[] m30 = {4,6,9,11};
-	boolean leapYearTest(int i) {
-		if((i%4==0 && i%100!=0)||i%400==0) {
-			return true;
+	boolean leapYearTest(int i) { 
+		return((i%4==0 && i%100!=0)||i%400==0);
 		}
-		else
-			return false;
-	}
 	boolean notLeapYearTest(int i) {
-		if(i%4!=0) {
-			return true;
-		}
-		else
-			return false;
+		return(i%4!=0);
 	}
 	boolean m31Test(int i) {
 		for(int j=0 ; j<m31.length;j++) {
