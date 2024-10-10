@@ -1,4 +1,4 @@
-package Hw_RpgNg;
+package hw_RpgGood;
 
 public class Run implements MoveSkill{
 	@Override

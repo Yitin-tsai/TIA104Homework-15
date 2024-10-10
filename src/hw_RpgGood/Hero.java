@@ -1,4 +1,4 @@
-package Hw_RpgNg;
+package hw_RpgGood;
 public abstract class Hero {
 	// 省略 getter/setter...
 	

@@ -1,4 +1,4 @@
-package Hw_RpgGood;
+package Hw_RpgNG2;
 public class SwordMan extends Hero {
 	
 	public SwordMan() {
