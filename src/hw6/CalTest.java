@@ -9,18 +9,23 @@ public class CalTest {
 		Calculator c = new Calculator();
 		int x = 0;
 		int y = 0 ;
+		
+		
 		System.out.println("請輸入x的值:");
 		try {
 			x = sc.nextInt();
 		}catch(InputMismatchException e) {
+			System.err.print("請輸入整數  ");
 			e.printStackTrace();
 			System.exit(0);
 		}
 			
 		System.out.println("請輸入y的值:");
+		
 		try {
 			y = sc.nextInt();
 		}catch(InputMismatchException e) {
+			System.err.print("請輸入整數");
 			e.printStackTrace();
 			System.exit(0);
 		}
@@ -29,6 +34,6 @@ public class CalTest {
 		}catch(CalException e ) {
 			e.printStackTrace();
 		}
-		
+	
 	}
 }
