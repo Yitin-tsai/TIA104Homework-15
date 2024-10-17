@@ -9,7 +9,7 @@ public class Hw4_5CountDays {
 		int[] d2 = {31,29,31,30,31,30,31,31,30,31,30,31};
 		count c = new count();
 		int daySum = 0;
-		System.out.println("請依序輸入西元年");
+		System.out.println("請輸入西元年");
 		int year = sc.nextInt();
 		int month = 0;
 			while(month == 0) {
@@ -32,7 +32,7 @@ public class Hw4_5CountDays {
 						System.out.println("輸入錯誤，請重新輸入");
 						}
 					else break;
-					}
+				}
 			}
 			else {
 				while(day==0) {
