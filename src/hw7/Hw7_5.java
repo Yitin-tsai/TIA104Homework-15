@@ -20,23 +20,6 @@ public class Hw7_5 {
 			System.out.println("資料讀取完畢!");
 		}
 		
-		
-//		Object i ; 
-//		ArrayList<Object> list1 = new ArrayList<>();
-//		while(true) {
-//			try {
-//				list1.add(ois.readObject());
-//			}catch(EOFException e) {
-//				break;
-//			}
-//		}
-//		for(Object obj: list1) {
-//			if(obj instanceof Cat) {
-//				((Cat)obj).speak();
-//			}else if(obj instanceof Dog) {
-//				((Dog)obj).speak();
-//			}			
-//		}
 	
 		ois.close();
 		fis.close();
