@@ -12,36 +12,32 @@ public class Hw7_5 {
 		File dir = new File("C:\\data\\Object.ser");
 		FileInputStream fis = new FileInputStream(dir);
 		ObjectInputStream ois = new ObjectInputStream(fis);
-		Object i ; 
-		ArrayList<Object> list1 = new ArrayList<>();
-		while(true) {
-			try {
-				list1.add(ois.readObject());
-			}catch(EOFException e) {
-				break;
+		try {
+			while(true) {
+				((Speakable)ois.readObject()).speak();
 			}
+		}catch(EOFException e ) {
+			System.out.println("資料讀取完畢!");
 		}
-		for(Object obj: list1) {
-			if(obj instanceof Cat) {
-				((Cat)obj).speak();
-			}else if(obj instanceof Dog) {
-				((Dog)obj).speak();
-			}			
-		}
-		//直接讀取輸出會出錯?
-//		try {
-//			while(true) {					
-//				if((i = ois.readObject()) instanceof Dog) {
-//					((Dog)i).speak();
-//				}
-//				else if((i = ois.readObject()) instanceof Cat) {
-//					((Cat)i).speak();
-//				}
+		
+		
+//		Object i ; 
+//		ArrayList<Object> list1 = new ArrayList<>();
+//		while(true) {
+//			try {
+//				list1.add(ois.readObject());
+//			}catch(EOFException e) {
+//				break;
 //			}
-			
-//		}catch(EOFException e ) {
-//			System.out.println("已讀取完畢");
 //		}
+//		for(Object obj: list1) {
+//			if(obj instanceof Cat) {
+//				((Cat)obj).speak();
+//			}else if(obj instanceof Dog) {
+//				((Dog)obj).speak();
+//			}			
+//		}
+	
 		ois.close();
 		fis.close();
 	}		

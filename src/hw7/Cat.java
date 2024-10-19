@@ -2,7 +2,7 @@ package hw7;
 
 import java.io.Serializable;
 
-public class Cat implements Speakable, Serializable   {
+public class Cat implements Speakable  {
 	private static final long serialVersionUid = 1L;
 	private String name;
 	

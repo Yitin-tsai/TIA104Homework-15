@@ -24,7 +24,7 @@ public class Hw7_4 {
 		
 		for(int i=0 ; i<obj.length ; i++) {
 			oos.writeObject(obj[i]);
-			System.out.println(oos.getClass());
+
 		}
 		
 		oos.close();
