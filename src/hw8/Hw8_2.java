@@ -27,15 +27,17 @@ public class Hw8_2 {
 
 		Iterator objs = set.iterator();
 		while (objs.hasNext()) {
-			Train thisTrain = (Train) objs.next();
-			System.out.println(thisTrain);
+			System.out.println(objs.next());
 		}
+		
 		System.out.println("==============================");
 
 		for (Train trains : set) {
 			System.out.println(trains);
 		}
+		
 		System.out.println("==============================");
+		
 		ArrayList<Train> list = new ArrayList<Train>();
 		list.add(t1);
 		list.add(t2);
@@ -47,15 +49,16 @@ public class Hw8_2 {
 		Collections.sort(list);
 		
 		for(int i = 0 ; i<list.size() ; i++) {
-			Train thisTrain = list.get(i);
-			System.out.println(thisTrain);
+			System.out.println(list.get(i));
 		}	
+		
 		System.out.println("==============================");
+		
 		Iterator objs2 = list.iterator();
 		while (objs2.hasNext()) {
-			Train thisTrain = (Train) objs2.next();
-			System.out.println(thisTrain);
+			System.out.println(objs2.next());
 		}
+		
 		System.out.println("==============================");
 				
 		for (Train trains : list) {
@@ -74,8 +77,7 @@ public class Hw8_2 {
 		
 		Iterator objs3 = tSet.iterator();
 		while (objs3.hasNext()) {
-			Train thisTrain = (Train) objs3.next();
-			System.out.println(thisTrain);
+			System.out.println(objs3.next());
 		}
 		System.out.println("==============================");		
 			
