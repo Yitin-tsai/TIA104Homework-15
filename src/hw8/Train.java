@@ -81,11 +81,17 @@ public class Train implements Comparable<Train> {
 		// TODO Auto-generated method stub
 		if (this.getNumber() > o.getNumber()) {
 			return -1;
-		} else if (this.getNumber() == o.getNumber() && this.getType().equals(o.getType())
-				&& this.getStart().equals(o.getStart())&& this.getDest().equals(o.getDest()) && this.getPrice() == o.getPrice()) {
+		} else if (this.number == o.number && this.type.equals(o.type) && this.start.equals(o.start)
+				&& this.dest.equals(o.dest) && this.price == o.price) {
 			return 0;
 		} else {
 			return 1;
 		}
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "班次 = " + number + " ,車種 = " + type + ",出發地 = " + start + ",目的地 = " + dest +",票價 =" +price;
 	}
 }

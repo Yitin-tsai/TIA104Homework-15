@@ -28,13 +28,12 @@ public class Hw8_2 {
 		Iterator objs = set.iterator();
 		while (objs.hasNext()) {
 			Train thisTrain = (Train) objs.next();
-			System.out.println(thisTrain.getNumber() +"-" + thisTrain.getType()+"-"+ thisTrain.getStart()+ "-" 
-					+thisTrain.getDest() +"-" +thisTrain.getPrice());
+			System.out.println(thisTrain);
 		}
+		System.out.println("==============================");
 
 		for (Train trains : set) {
-			System.out.println(trains.getNumber() + "-" + trains.getType() + "-" + trains.getStart() + "-"
-					+ trains.getDest() + trains.getPrice());
+			System.out.println(trains);
 		}
 		System.out.println("==============================");
 		ArrayList<Train> list = new ArrayList<Train>();
@@ -49,19 +48,18 @@ public class Hw8_2 {
 		
 		for(int i = 0 ; i<list.size() ; i++) {
 			Train thisTrain = list.get(i);
-			System.out.println(thisTrain.getNumber() +"-" + thisTrain.getType()+"-"+ thisTrain.getStart()+ "-" 
-					+thisTrain.getDest() +"-" +thisTrain.getPrice());
+			System.out.println(thisTrain);
 		}	
+		System.out.println("==============================");
 		Iterator objs2 = list.iterator();
 		while (objs2.hasNext()) {
 			Train thisTrain = (Train) objs2.next();
-			System.out.println(thisTrain.getNumber() +"-" + thisTrain.getType()+"-"+ thisTrain.getStart()+ "-" 
-					+thisTrain.getDest() +"-" +thisTrain.getPrice());
+			System.out.println(thisTrain);
 		}
+		System.out.println("==============================");
 				
 		for (Train trains : list) {
-			System.out.println(trains.getNumber() + "-" + trains.getType() + "-" + trains.getStart() + "-"
-					+ trains.getDest() + trains.getPrice());
+			System.out.println(trains);
 		}
 
 		System.out.println("==============================");
@@ -77,14 +75,12 @@ public class Hw8_2 {
 		Iterator objs3 = tSet.iterator();
 		while (objs3.hasNext()) {
 			Train thisTrain = (Train) objs3.next();
-			System.out.println(thisTrain.getNumber() +"-" + thisTrain.getType()+"-"+ thisTrain.getStart()+ "-" 
-					+thisTrain.getDest() +"-" +thisTrain.getPrice());
+			System.out.println(thisTrain);
 		}
-		
-				
+		System.out.println("==============================");		
+			
 		for (Train trains : tSet) {
-			System.out.println(trains.getNumber() + "-" + trains.getType() + "-" + trains.getStart() + "-"
-					+ trains.getDest() + trains.getPrice());
+			System.out.println(trains);
 		}
 
 	}
